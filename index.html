@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gemini KI Chatbot</title>
+  <!-- Google Fonts und Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="menu" id="menu_chat">
+    <button type="button" id="back" class="icon material-symbols-rounded">arrow_forward</button>
+    <!-- Chatverlauf -->
+    <div class="chat-list"></div>
+
+    <!-- Eingabebereich -->
+    <form class="typing-form">
+      <input type="text" placeholder="Deine Nachricht" class="typing-input" required>
+      <button type="submit" id="send-message-button" class="icon material-symbols-rounded">send</button>
+      <button type="button" id="delete-chat-button" class="icon material-symbols-rounded">delete</button>
+    </form>
+  </div>
+  <div class="menu" id="menu_key">
+    <div class="title">Passwort eingeben</div>
+    <input class="input_key">
+    <button class="next">Weiter</button>
+  </div>
+  <div class="menu" id="menu_main">
+    <div class="title">Mit wem möchtest du schreiben?</div>
+    <button class="option" id="zwilling">Leonards geheimer Zwillingsbruder</button>
+    <button class="option" id="katze">Eine random Katze</button>
+    <button class="option" id="streber">Ein Streber</button>
+    <button class="option" id="baum">Ein Baum</button>
+    <button class="option" id="piet">Piet der Rizzler</button>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
