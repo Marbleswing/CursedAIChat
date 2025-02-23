@@ -30,11 +30,12 @@ body {
 .message {
   margin-bottom: 1rem;
   display: flex;
-  justify-content: flex-start;
 }
 
 .message.outgoing {
+  display: flex;
   justify-content: flex-end;
+
 }
 
 .message .text {
@@ -42,6 +43,9 @@ body {
   padding: 0.75rem 1rem;
   border-radius: 1rem;
   max-width: 70%;
+}
+.message.outgoing .text {
+  margin-left: auto;
 }
 
 .typing-input {
